@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" ,content="康棣玮的初中回忆">
+    <meta name="keywords" ,content="康棣玮,Tommy_time,回忆,同学录">
+    <title>School Memory</title>
+
+    <style>
+        .root {
+            padding: 5px;
+        }
+
+        .sreen {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .layout-header{
+            width: 100%;
+            min-width: 380px;
+            max-width: 600px;
+        }
+        .line {
+            margin: 20px 0px;
+            /* padding: 10px; */
+            background-color: hsla(0, 0%, 50%, 0.8);
+            height: 1px;
+            width: auto;
+        }
+
+        /* button style */
+        .btnTest {
+            margin: 10px;
+            -webkit-border-radius: 20;
+            -moz-border-radius: 20;
+            border-radius: 20px;
+            font-family: Arial;
+            color: white;
+            font-size: 20px;
+            background: #3498db;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        .btnTest:hover {
+            background: #3cb0fd;
+            text-decoration: none;
+        }
+
+        .btnTest span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .btnTest span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btnTest:hover span {
+            padding-right: 25px;
+        }
+
+        .btnTest:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="layout">
+            <div class="layout-header">
+                <div class="layout-header-logo">
+                    <p style="margin: 10px;">
+                        <img src="potato.jpg" alt="头像" width="80px" height="80px" style="border-radius: 40px;" />
+                        Tommy_time
+                    </p>
+                </div>
+
+                <div class="layout-header-title">
+                    <h1>My School Memory of<br>LUXIAN NO.2 HIGE SCHOOL<br>校园回忆：泸二外</h1>
+                </div>
+
+                <div class="layout-header-find">
+                    <a class="btnTest" href="find.html"><span>搜索 / Find</span></a>
+                </div>
+
+                <div class="line"></div>
+            </div>
+
+            <div class="layout-body">
+                <div>
+                    <img src="myself.JPG" alt="我自己" style="width: 100%; min-width: 380px;max-width: 600px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
