@@ -14,16 +14,19 @@
             padding: 5px;
         }
 
-        .sreen {
+        .screen-s,
+        .screen-m,
+        .screen-l {
             margin-top: 10px;
             margin-bottom: 10px;
         }
 
-        .layout-header{
+        .screen-header {
             width: 100%;
             min-width: 380px;
             max-width: 600px;
         }
+
         .line {
             margin: 20px 0px;
             /* padding: 10px; */
@@ -76,33 +79,40 @@
             right: 0;
         }
     </style>
+
+    <script>
+        if(window.innerWidth<320){
+            
+        }
+    </script>
 </head>
 
 <body>
     <div id="root">
-        <div class="layout">
-            <div class="layout-header">
-                <div class="layout-header-logo">
+        <div class="screen-s">
+            <div class="screen-header">
+                <div class="screen-header-logo">
                     <p style="margin: 10px;">
                         <img src="potato.jpg" alt="头像" width="80px" height="80px" style="border-radius: 40px;" />
                         Tommy_time
                     </p>
                 </div>
 
-                <div class="layout-header-title">
+                <div class="screen-header-title">
                     <h1>My School Memory of<br>LUXIAN NO.2 HIGE SCHOOL<br>校园回忆：泸二外</h1>
                 </div>
 
-                <div class="layout-header-find">
+                <div class="screen-header-find">
                     <a class="btnTest" href="find.html"><span>搜索 / Find</span></a>
                 </div>
 
                 <div class="line"></div>
             </div>
 
-            <div class="layout-body">
+            <div class="screen-body">
                 <div>
                     <img src="myself.JPG" alt="我自己" style="width: 100%; min-width: 380px;max-width: 600px;">
+                    <img src="exam" alt="https://imgse.com/i/pPPNZE4">
                 </div>
             </div>
         </div>
